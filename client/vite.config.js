@@ -8,8 +8,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       "/api": {
-        target:
-          "https://dev-learn-hub-deployment-23nvd7qc7-ndasalla.vercel.app/",
+        target: "https://devlearnhubdeployment-server.up.railway.app",
         changeOrigin: true,
       },
     },

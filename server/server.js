@@ -10,7 +10,7 @@ import authRoutes from "./routes/auth.js";
 
 const CLIENT_URL =
   process.env.NODE_ENV === "production"
-    ? "https://dev-learn-hub-deployment-client-2lr1kcfvt-ndasalla.vercel.app/"
+    ? "https://devlearnhubdeployment-client.up.railway.app"
     : "http://localhost:3001";
 
 // create express app
