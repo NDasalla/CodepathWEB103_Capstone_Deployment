@@ -12,7 +12,7 @@ export async function loader({ params }) {
 }
 
 const Homepage = () => {
-  const { currentUser } = useContext(AuthContext);
+  // const { currentUser } = useContext(AuthContext);
   const { courses } = useLoaderData();
 
   return (
