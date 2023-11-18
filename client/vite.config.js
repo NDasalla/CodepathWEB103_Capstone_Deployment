@@ -8,7 +8,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       "/api": {
-        target: "devlearnhubdeployment-server.up.railway.app",
+        target: "https://devlearnhubdeployment-server.up.railway.app",
         changeOrigin: true,
       },
     },

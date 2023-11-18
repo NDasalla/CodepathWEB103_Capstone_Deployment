@@ -10,7 +10,7 @@ import authRoutes from "./routes/auth.js";
 
 const CLIENT_URL =
   process.env.NODE_ENV === "production"
-    ? "devlearnhubdeployment-client.up.railway.app"
+    ? "https://devlearnhubdeployment-client.up.railway.app"
     : "http://localhost:3001";
 
 // create express app
