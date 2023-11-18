@@ -7,6 +7,12 @@ import passport from "passport";
 import session from "express-session";
 import { GitHub } from "./config/auth.js";
 import authRoutes from "./routes/auth.js";
+
+const CLIENT_URL =
+  process.env.NODE_ENV === "production"
+    ? "devlearnhubdeployment-client.up.railway.app"
+    : "http://localhost:3001";
+
 // create express app
 const app = express();
 
@@ -17,11 +23,6 @@ app.use(
     saveUninitialized: true,
   })
 );
-
-const CLIENT_URL =
-  process.env.NODE_ENV === "production"
-    ? "https://fredngo-cp-w103-lab9-client.up.railway.app"
-    : "http://localhost:3000";
 
 app.use(express.json());
 app.use(
